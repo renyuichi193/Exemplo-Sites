@@ -1,0 +1,236 @@
+/* Ajustes de leitura: preservam o layout e ampliam textos e controles pequenos. */
+.ui-icon {
+  width: 1.1em;
+  height: 1.1em;
+  flex: 0 0 auto;
+  color: currentColor;
+}
+
+.button .ui-icon,
+.scroll .ui-icon,
+.program-card footer .ui-icon {
+  width: 17px;
+  height: 17px;
+}
+
+.scroll,
+.program-card footer a,
+.plan li {
+  display: flex;
+  align-items: center;
+}
+
+.scroll,
+.program-card footer a {
+  gap: 8px;
+}
+
+.card-icon .ui-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.plan li {
+  gap: 9px;
+}
+
+.plan li .ui-icon {
+  width: 16px;
+  height: 16px;
+  color: #78941e;
+}
+
+.plan.featured li .ui-icon {
+  color: var(--lime);
+}
+
+.faq button i .ui-icon,
+.modal-close .ui-icon,
+.toast > b .ui-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.modal-close {
+  display: grid;
+  place-items: center;
+}
+
+.header {
+  height: 98px;
+}
+
+.logo {
+  font-size: 22px;
+}
+
+.nav a {
+  font-size: 14px;
+}
+
+.button {
+  min-height: 54px;
+  padding-inline: 23px;
+  font-size: 14px;
+}
+
+.button.small {
+  min-height: 46px;
+}
+
+.eyebrow,
+.final-cta > span {
+  font-size: 12px;
+}
+
+.hero-copy > p {
+  font-size: 18px;
+}
+
+.hero-actions > a {
+  font-size: 14px;
+}
+
+.hero-proof b {
+  font-size: 14px;
+}
+
+.hero-proof span,
+.scroll {
+  font-size: 11px;
+}
+
+.avatars i {
+  font-size: 10px;
+}
+
+.metrics span {
+  max-width: 150px;
+  font-size: 12px;
+}
+
+.section-heading > p,
+.classes-intro p,
+.bmi-copy p {
+  font-size: 16px;
+}
+
+.program-card > span,
+.plan-label {
+  font-size: 12px;
+}
+
+.program-card p {
+  font-size: 15px;
+}
+
+.program-card footer b,
+.program-card footer a {
+  font-size: 13px;
+}
+
+.day-tabs button,
+.billing-toggle button {
+  font-size: 13px;
+}
+
+.class-item strong {
+  font-size: 16px;
+}
+
+.class-item small {
+  font-size: 12px;
+}
+
+.class-item span {
+  font-size: 11px;
+}
+
+.plan h3 {
+  font-size: 25px;
+}
+
+.price span {
+  font-size: 13px;
+}
+
+.plan ul {
+  font-size: 15px;
+}
+
+.popular {
+  font-size: 11px;
+}
+
+.field label {
+  font-size: 12px;
+}
+
+.field span,
+.bmi-result {
+  font-size: 13px;
+}
+
+.faq button {
+  font-size: 17px;
+}
+
+.faq p {
+  font-size: 15px;
+}
+
+.footer > div a {
+  font-size: 13px;
+}
+
+.footer p {
+  font-size: 12px;
+}
+
+.modal > p {
+  font-size: 15px;
+}
+
+.modal label {
+  font-size: 12px;
+}
+
+.modal input,
+.modal select {
+  height: 54px;
+  font-size: 15px;
+}
+
+.toast strong {
+  font-size: 14px;
+}
+
+.toast small {
+  font-size: 12px;
+}
+
+@media (max-width: 950px) {
+  .nav a {
+    min-height: 38px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    height: 78px;
+  }
+
+  .hero-copy > p,
+  .section-heading > p,
+  .classes-intro p,
+  .bmi-copy p {
+    font-size: 16px;
+  }
+
+  .metrics span {
+    font-size: 11px;
+  }
+}

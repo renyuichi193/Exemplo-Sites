@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#07131e" />
+    <meta name="description" content="FitPulse — treinos inteligentes, aulas em grupo e acompanhamento de verdade." />
+    <title>FitPulse Studio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./readability.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="logo" href="#inicio"><span>FIT</span>PULSE<i></i></a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+      <nav class="nav"><a href="#modalidades">Modalidades</a><a href="#aulas">Aulas</a><a href="#planos">Planos</a><a href="#imc">Calcule seu IMC</a></nav>
+      <button class="button small open-trial" type="button">Aula experimental</button>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <img src="./assets/hero.png" alt="Atleta treinando com cordas navais" />
+        <div class="hero-overlay"></div>
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Treino inteligente · resultado real</span>
+          <h1>O seu ritmo.<br /><em>Mais forte.</em></h1>
+          <p>Estrutura completa, professores atentos e um plano que acompanha a sua evolução.</p>
+          <div class="hero-actions"><button class="button open-trial" type="button">Começar agora <svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#arrow-right"></use></svg></button><a href="#modalidades">Conhecer o studio</a></div>
+        </div>
+        <div class="hero-proof"><div class="avatars"><i>JP</i><i>MA</i><i>LF</i></div><p><b>+1.800 alunos</b><span>treinando com a gente</span></p></div>
+        <a class="scroll" href="#modalidades">Explore <svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#arrow-down"></use></svg></a>
+      </section>
+
+      <section class="metrics">
+        <article><strong>12</strong><span>anos transformando rotinas</span></article><article><strong>4,9</strong><span>avaliação média dos alunos</span></article><article><strong>36</strong><span>profissionais especializados</span></article><article><strong>06—23h</strong><span>segunda a sexta-feira</span></article>
+      </section>
+
+      <section class="section programs" id="modalidades">
+        <header class="section-heading reveal"><div><span class="eyebrow dark">Escolha seu movimento</span><h2>Um treino para<br />cada objetivo.</h2></div><p>Do primeiro treino ao alto rendimento, você encontra orientação e estrutura para evoluir com segurança.</p></header>
+        <div class="program-grid">
+          <article class="program-card strength reveal"><div class="card-icon"><svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#dumbbell"></use></svg></div><span>Força & resistência</span><h3>Musculação</h3><p>Treinos personalizados e equipamentos modernos para evolução constante.</p><footer><b>01</b><a href="#planos">Ver planos <svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#arrow-right"></use></svg></a></footer></article>
+          <article class="program-card hit reveal"><div class="card-icon"><svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#zap"></use></svg></div><span>Energia & velocidade</span><h3>HIIT</h3><p>Aulas intensas de curta duração para melhorar condicionamento e performance.</p><footer><b>02</b><a href="#aulas">Ver horários <svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#arrow-right"></use></svg></a></footer></article>
+          <article class="program-card mobility reveal"><div class="card-icon"><svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#mobility"></use></svg></div><span>Equilíbrio & controle</span><h3>Mobilidade</h3><p>Movimentos guiados para ampliar flexibilidade, postura e bem-estar.</p><footer><b>03</b><a href="#aulas">Ver horários <svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#arrow-right"></use></svg></a></footer></article>
+        </div>
+      </section>
+
+      <section class="classes" id="aulas">
+        <div class="classes-intro reveal"><span class="eyebrow">Grade semanal</span><h2>Encontre a sua<br />próxima aula.</h2><p>Escolha o dia e veja as atividades disponíveis. As vagas são limitadas.</p></div>
+        <div class="schedule reveal">
+          <div class="day-tabs" role="tablist"><button class="active" data-day="seg" type="button">Seg</button><button data-day="ter" type="button">Ter</button><button data-day="qua" type="button">Qua</button><button data-day="qui" type="button">Qui</button><button data-day="sex" type="button">Sex</button><button data-day="sab" type="button">Sáb</button></div>
+          <div class="class-list" id="class-list" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section plans" id="planos">
+        <header class="section-heading reveal"><div><span class="eyebrow dark">Planos transparentes</span><h2>Invista na sua<br />melhor versão.</h2></div><div class="billing-toggle"><button class="active" data-period="mensal" type="button">Mensal</button><button data-period="trimestral" type="button">Trimestral <small>-15%</small></button></div></header>
+        <div class="plan-grid">
+          <article class="plan reveal"><span class="plan-label">Essencial</span><h3>Comece no seu ritmo</h3><div class="price"><small>R$</small><strong data-monthly="99" data-quarterly="84">99</strong><span>/mês</span></div><ul><li><svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#check"></use></svg> Musculação livre</li><li><svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#check"></use></svg> Avaliação inicial</li><li><svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#check"></use></svg> App de treinos</li><li class="muted"><svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#minus"></use></svg> Aulas em grupo</li></ul><button class="button outline open-trial" type="button" data-plan="Essencial">Escolher Essencial</button></article>
+          <article class="plan featured reveal"><div class="popular">Mais escolhido</div><span class="plan-label">Performance</span><h3>Treino completo</h3><div class="price"><small>R$</small><strong data-monthly="149" data-quarterly="127">149</strong><span>/mês</span></div><ul><li><svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#check"></use></svg> Musculação livre</li><li><svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#check"></use></svg> Todas as aulas</li><li><svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#check"></use></svg> Avaliação trimestral</li><li><svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#check"></use></svg> App de treinos</li></ul><button class="button open-trial" type="button" data-plan="Performance">Escolher Performance</button></article>
+          <article class="plan reveal"><span class="plan-label">Elite</span><h3>Acompanhamento total</h3><div class="price"><small>R$</small><strong data-monthly="249" data-quarterly="212">249</strong><span>/mês</span></div><ul><li><svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#check"></use></svg> Tudo do Performance</li><li><svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#check"></use></svg> Personal 2x por semana</li><li><svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#check"></use></svg> Avaliação mensal</li><li><svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#check"></use></svg> Área de recuperação</li></ul><button class="button outline open-trial" type="button" data-plan="Elite">Escolher Elite</button></article>
+        </div>
+      </section>
+
+      <section class="bmi" id="imc">
+        <div class="bmi-copy reveal"><span class="eyebrow">Ferramenta gratuita</span><h2>Descubra seu IMC.</h2><p>Use o resultado como referência inicial. Uma avaliação profissional considera muito mais do que apenas peso e altura.</p><div class="bmi-scale"><i></i><i></i><i></i><i></i></div></div>
+        <form class="bmi-form reveal" id="bmi-form"><div class="field"><label for="weight">Seu peso</label><div><input id="weight" name="weight" type="number" min="30" max="300" step="0.1" placeholder="75" required /><span>kg</span></div></div><div class="field"><label for="height">Sua altura</label><div><input id="height" name="height" type="number" min="100" max="240" placeholder="175" required /><span>cm</span></div></div><button class="button" type="submit">Calcular agora</button><div class="bmi-result" id="bmi-result" aria-live="polite"><span>Seu resultado aparecerá aqui.</span></div></form>
+      </section>
+
+      <section class="section faq-section">
+        <header class="section-heading reveal"><div><span class="eyebrow dark">Dúvidas frequentes</span><h2>Antes do primeiro treino.</h2></div></header>
+        <div class="faq reveal"><article><button type="button" aria-expanded="false"><span>Preciso já ter experiência para começar?</span><i><svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#plus"></use></svg></i></button><p>Não. A equipe faz uma avaliação inicial e adapta o treino ao seu nível atual.</p></article><article><button type="button" aria-expanded="false"><span>Posso fazer uma aula experimental?</span><i><svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#plus"></use></svg></i></button><p>Sim. Você escolhe uma modalidade e conhece a estrutura sem compromisso.</p></article><article><button type="button" aria-expanded="false"><span>Os planos possuem fidelidade?</span><i><svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#plus"></use></svg></i></button><p>O plano mensal não possui fidelidade. O trimestral oferece desconto e permanência de três meses.</p></article></div>
+      </section>
+
+      <section class="final-cta"><span>Seu próximo nível começa agora.</span><h2>Venha treinar<br />com a gente.</h2><button class="button open-trial" type="button">Agendar aula experimental <svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#arrow-right"></use></svg></button></section>
+    </main>
+
+    <footer class="footer"><a class="logo" href="#inicio"><span>FIT</span>PULSE<i></i></a><div><a href="#modalidades">Modalidades</a><a href="#planos">Planos</a><a href="../showcase/index.html">Ver os 3 exemplos</a></div><p>© <span id="year"></span> FitPulse Studio</p></footer>
+
+    <div class="modal-backdrop" id="trial-modal" hidden><form class="modal" id="trial-form"><button class="modal-close" type="button" aria-label="Fechar"><svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#x"></use></svg></button><span class="eyebrow dark">Primeiro passo</span><h2>Agende sua aula.</h2><p>Preencha seus dados e nossa equipe entrará em contato.</p><label>Nome completo<input name="name" type="text" placeholder="Seu nome" required /></label><label>WhatsApp<input name="phone" type="tel" placeholder="(00) 00000-0000" required /></label><label>Plano ou objetivo<select name="interest"><option value="">Quero conhecer primeiro</option><option>Essencial</option><option>Performance</option><option>Elite</option><option>Aulas em grupo</option></select></label><button class="button" type="submit">Enviar interesse <svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#arrow-right"></use></svg></button></form></div>
+    <div class="toast" id="toast" role="status" hidden><b><svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#check"></use></svg></b><span><strong>Recebemos seu interesse!</strong><small>Em breve entraremos em contato.</small></span></div>
+    <script src="./script.js" defer></script>
+  </body>
+</html>

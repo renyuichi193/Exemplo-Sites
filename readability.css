@@ -1,0 +1,65 @@
+/* Ajustes de leitura da vitrine. */
+.ui-icon {
+  width: 1.1em;
+  height: 1.1em;
+  flex: 0 0 auto;
+  color: currentColor;
+}
+
+.project-copy a .ui-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.tech-grid .ui-icon {
+  width: 52px;
+  height: 52px;
+}
+
+.eyebrow {
+  font-size: 13px;
+}
+
+.intro p {
+  max-width: 700px;
+  font-size: 18px;
+}
+
+.project-meta {
+  font-size: 13px;
+}
+
+.project-copy p {
+  font-size: 16px;
+}
+
+.project-copy li {
+  padding: 9px 13px;
+  font-size: 13px;
+}
+
+.project-copy a {
+  padding: 16px 19px;
+  font-size: 15px;
+}
+
+.simple-preview button {
+  font-size: 14px;
+}
+
+.fit-preview small,
+.tech-preview nav b {
+  font-size: 13px;
+}
+
+.tech-preview nav span,
+.tech-preview nav i {
+  font-size: 11px;
+}
+
+@media (max-width: 540px) {
+  .intro p,
+  .project-copy p {
+    font-size: 16px;
+  }
+}

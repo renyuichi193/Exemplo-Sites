@@ -1,0 +1,156 @@
+/* Ajustes de leitura: preservam o layout e ampliam textos e controles pequenos. */
+.ui-icon {
+  width: 1.1em;
+  height: 1.1em;
+  flex: 0 0 auto;
+  color: currentColor;
+}
+
+.button .ui-icon,
+.text-link .ui-icon {
+  width: 17px;
+  height: 17px;
+}
+
+.image-note {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.image-note .rating-icon {
+  width: 13px;
+  height: 13px;
+  color: #b87540;
+}
+
+.marquee .ui-icon {
+  width: 14px;
+  height: 14px;
+  color: var(--caramel);
+}
+
+.menu-photo {
+  height: 178px;
+  margin: 10px 0 2px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 90px 90px 16px 16px;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.menu-card.cream .menu-photo {
+  border-color: var(--line);
+}
+
+.menu-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.menu-card:hover .menu-photo img {
+  transform: scale(1.035);
+}
+
+.site-header {
+  height: 100px;
+}
+
+.logo {
+  font-size: 30px;
+}
+
+.nav a {
+  font-size: 15px;
+}
+
+.header-cta {
+  padding: 14px 19px;
+  font-size: 13px;
+}
+
+.eyebrow {
+  font-size: 12px;
+}
+
+.hero-copy > p {
+  font-size: 18px;
+}
+
+.button,
+.text-link {
+  font-size: 14px;
+}
+
+.button {
+  padding: 16px 22px;
+}
+
+.image-note {
+  right: 82px;
+  bottom: 25px;
+  font-size: 13px;
+}
+
+.hero-side {
+  font-size: 11px;
+}
+
+.section-heading > p,
+.menu-card p,
+.story-copy p,
+.visit-copy p {
+  font-size: 16px;
+}
+
+.menu-number,
+.story-mark small,
+.story cite {
+  font-size: 12px;
+}
+
+.menu-card h3 {
+  font-size: 30px;
+}
+
+.menu-card footer span {
+  font-size: 12px;
+}
+
+.hours div {
+  font-size: 15px;
+}
+
+.footer p,
+.footer > a:last-child {
+  font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  .nav a {
+    min-height: 38px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 580px) {
+  .site-header {
+    height: 78px;
+  }
+
+  .hero-copy > p,
+  .section-heading > p,
+  .menu-card p,
+  .story-copy p,
+  .visit-copy p {
+    font-size: 16px;
+  }
+
+  .image-note {
+    right: 48px;
+  }
+}

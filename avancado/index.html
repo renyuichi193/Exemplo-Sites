@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="Nexora Tech — tecnologia que acompanha o seu ritmo." />
+    <title>Nexora Tech</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./readability.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="logo" href="#inicio">NEXORA<span>•</span></a>
+      <form class="search" id="header-search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg><input id="search-input" type="search" placeholder="O que você procura?" aria-label="Buscar produtos" /><kbd>⌘ K</kbd></form>
+      <div class="header-actions"><button data-action="toggle-favorites" type="button" aria-label="Mostrar favoritos"><svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#heart"></use></svg><i id="favorite-count">0</i></button><button data-action="open-cart" type="button" aria-label="Abrir carrinho"><svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#shopping-cart"></use></svg><i id="cart-count">0</i></button><button class="mobile-menu" data-action="toggle-mobile-menu" type="button" aria-label="Abrir categorias"><svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#menu"></use></svg></button></div>
+    </header>
+    <nav class="category-nav" id="category-nav"><button class="active" data-category="all" type="button">Todos</button><button data-category="smartphones" type="button">Smartphones</button><button data-category="audio" type="button">Áudio</button><button data-category="computadores" type="button">Computadores</button><button data-category="wearables" type="button">Wearables</button><button data-category="acessorios" type="button">Acessórios</button><a href="#ofertas">Ofertas <span>-20%</span></a></nav>
+
+    <main>
+      <section class="hero" id="inicio">
+        <img src="./assets/hero.png" alt="Seleção de produtos tecnológicos em exposição" />
+        <div class="hero-copy"><span class="tag">Nova coleção 2026</span><h1>Tecnologia que<br />acompanha <em>você.</em></h1><p>Produtos escolhidos para trabalhar, criar e se divertir sem limites.</p><div><a class="button primary" href="#catalogo">Explorar produtos <svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#arrow-right"></use></svg></a><button class="button ghost" data-action="show-deals" type="button">Ver ofertas</button></div></div>
+        <div class="hero-card"><span>Entrega expressa</span><strong>Receba em até 24h*</strong><small>*Capitais e regiões selecionadas</small></div>
+      </section>
+
+      <section class="benefits"><article><b>01</b><div><strong>Produtos selecionados</strong><span>Qualidade testada pela nossa equipe.</span></div></article><article><b>02</b><div><strong>Pagamento flexível</strong><span>Até 12x sem juros no cartão.</span></div></article><article><b>03</b><div><strong>Suporte humano</strong><span>Ajuda de verdade antes e depois da compra.</span></div></article></section>
+
+      <section class="catalog" id="catalogo">
+        <header class="catalog-header"><div><span class="eyebrow">Curadoria Nexora</span><h2>Produtos em destaque</h2><p id="result-count">Carregando produtos...</p></div><div class="catalog-tools"><button class="filter-mobile" data-action="toggle-filters" type="button">Filtros <svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#filter"></use></svg></button><label>Ordenar por<select id="sort-select"><option value="featured">Destaques</option><option value="low">Menor preço</option><option value="high">Maior preço</option><option value="rating">Melhor avaliação</option></select></label></div></header>
+        <div class="catalog-layout">
+          <aside class="filters" id="filters"><div class="filter-mobile-head"><strong>Filtros</strong><button data-action="toggle-filters" type="button" aria-label="Fechar filtros"><svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#x"></use></svg></button></div><section><h3>Categorias</h3><div class="filter-options" id="category-filters"></div></section><section><h3>Faixa de preço</h3><label><input type="radio" name="price" value="all" checked /> Todos os preços</label><label><input type="radio" name="price" value="under500" /> Até R$ 500</label><label><input type="radio" name="price" value="500to1500" /> R$ 500 — R$ 1.500</label><label><input type="radio" name="price" value="over1500" /> Acima de R$ 1.500</label></section><section><h3>Disponibilidade</h3><label><input id="stock-only" type="checkbox" /> Somente pronta entrega</label></section><button class="clear-filters" data-action="clear-filters" type="button">Limpar filtros</button></aside>
+          <div><div class="active-filters" id="active-filters"></div><div class="product-grid" id="product-grid"></div><div class="empty-products" id="empty-products" hidden><svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#search-x"></use></svg><h3>Nenhum produto encontrado</h3><p>Tente mudar a busca ou remover algum filtro.</p><button class="button primary" data-action="clear-filters" type="button">Limpar filtros</button></div></div>
+        </div>
+      </section>
+
+      <section class="promo" id="ofertas"><div><span class="eyebrow light">Oferta da semana</span><h2>Som mais imersivo.<br />Preço mais leve.</h2><p>Sony WH-1000XM5 com cancelamento de ruído, conexão sem fio e acabamento confortável.</p><div class="promo-price"><del>R$ 2.599</del><strong>R$ 2.299</strong><span>ou 10x de R$ 229,90</span></div><button class="button light" data-action="quick-add" data-id="p2" type="button">Adicionar ao carrinho <svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#arrow-right"></use></svg></button></div><div class="promo-photo"><img src="https://www.sony.com.br/image/6145c1d32e6ac8e63a46c912dc33c5bb?fmt=pjpeg&amp;wid=330&amp;bgcolor=FFFFFF&amp;bgc=FFFFFF" alt="Headphone Sony WH-1000XM5" loading="lazy" decoding="async" /></div></section>
+
+      <section class="newsletter"><div><span class="eyebrow">Novidades sem spam</span><h2>Entre para a lista Nexora.</h2><p>Ofertas, lançamentos e guias para escolher melhor.</p></div><form id="newsletter-form"><input type="email" placeholder="seu@email.com" aria-label="Seu e-mail" required /><button class="button primary" type="submit">Quero receber <svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#arrow-right"></use></svg></button></form></section>
+    </main>
+
+    <footer class="footer"><div><a class="logo" href="#inicio">NEXORA<span>•</span></a><p>Tecnologia escolhida com cuidado.</p></div><div><strong>Loja</strong><a href="#catalogo">Produtos</a><a href="#ofertas">Ofertas</a><a href="../showcase/index.html">Ver os 3 exemplos</a></div><div><strong>Ajuda</strong><a href="#">Entregas</a><a href="#">Trocas</a><a href="#">Fale conosco</a></div><div><strong>Pagamento</strong><span>PIX · VISA · MASTER · ELO</span></div><small>© <span id="year"></span> Nexora Tech. Loja demonstrativa.</small></footer>
+
+    <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+    <aside class="cart-drawer" id="cart-drawer" aria-label="Carrinho" aria-hidden="true"><header><div><span>Seu carrinho</span><strong id="drawer-count">0 itens</strong></div><button data-action="close-cart" type="button" aria-label="Fechar carrinho"><svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#x"></use></svg></button></header><div class="cart-items" id="cart-items"></div><footer id="cart-footer"></footer></aside>
+    <div class="modal-backdrop" id="product-modal" hidden></div>
+    <div class="modal-backdrop" id="checkout-modal" hidden></div>
+    <div class="toast" id="toast" hidden><b><svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#check"></use></svg></b><div><strong id="toast-title">Produto adicionado</strong><span id="toast-message">Seu carrinho foi atualizado.</span></div></div>
+    <script src="./script.js" defer></script>
+  </body>
+</html>

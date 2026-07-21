@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4ecdc" />
+    <meta name="description" content="Grão Café — cafés especiais, comida fresca e um lugar para desacelerar." />
+    <title>Grão Café</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./readability.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="#inicio" aria-label="Grão Café, início">grão<span>.</span></a>
+      <button class="menu-button" type="button" aria-label="Abrir menu" aria-expanded="false"><i></i><i></i></button>
+      <nav class="nav" aria-label="Menu principal">
+        <a href="#cardapio">Cardápio</a><a href="#historia">Nossa história</a><a href="#visite">Visite</a>
+      </nav>
+      <a class="header-cta" href="https://wa.me/5500000000000" target="_blank" rel="noreferrer">Pedir pelo WhatsApp</a>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Café especial · desde 2018</span>
+          <h1>Café feito<br />sem <em>pressa.</em></h1>
+          <p>Grãos selecionados, comida fresca e um cantinho pensado para você desacelerar.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#cardapio">Ver cardápio <svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#arrow-down"></use></svg></a>
+            <a class="text-link" href="#visite">Como chegar <svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#arrow-up-right"></use></svg></a>
+          </div>
+        </div>
+        <div class="hero-image reveal">
+          <img src="./assets/hero.png" alt="Latte artesanal servido com croissant" />
+          <span class="image-note"><b>4,9</b> <svg class="ui-icon rating-icon" aria-hidden="true"><use href="../icons.svg#star"></use></svg> no Google</span>
+        </div>
+        <div class="hero-side">Aberto hoje · 08h às 19h</div>
+      </section>
+
+      <section class="marquee" aria-label="Diferenciais">
+        <span>Torra fresca</span><svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#sparkles"></use></svg><span>Leite vegetal</span><svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#sparkles"></use></svg><span>Wi-Fi gratuito</span><svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#sparkles"></use></svg><span>Pet friendly</span>
+      </section>
+
+      <section class="menu-section" id="cardapio">
+        <header class="section-heading reveal">
+          <div><span class="eyebrow">Os favoritos da casa</span><h2>Um pequeno cardápio.<br />Tudo bem feito.</h2></div>
+          <p>Ingredientes frescos e receitas que combinam com qualquer hora do dia.</p>
+        </header>
+        <div class="menu-grid">
+          <article class="menu-card dark reveal">
+            <span class="menu-number">01</span><div class="menu-photo"><img src="./assets/latte-card.webp" alt="Latte da casa com arte no leite" loading="lazy" decoding="async" /></div>
+            <h3>Latte da casa</h3><p>Espresso duplo, leite cremoso e notas de caramelo.</p>
+            <footer><b>R$ 14</b><span>quente ou gelado</span></footer>
+          </article>
+          <article class="menu-card caramel reveal">
+            <span class="menu-number">02</span><div class="menu-photo"><img src="./assets/croissant-card.webp" alt="Croissant artesanal dourado e folhado" loading="lazy" decoding="async" /></div>
+            <h3>Croissant artesanal</h3><p>Massa folhada, manteiga e recheio à sua escolha.</p>
+            <footer><b>R$ 16</b><span>feito no dia</span></footer>
+          </article>
+          <article class="menu-card cream reveal">
+            <span class="menu-number">03</span><div class="menu-photo"><img src="./assets/orange-cake-card.webp" alt="Fatia de bolo de laranja com cobertura cítrica" loading="lazy" decoding="async" /></div>
+            <h3>Bolo de laranja</h3><p>Fofinho, cítrico e coberto com calda delicada.</p>
+            <footer><b>R$ 12</b><span>fatia generosa</span></footer>
+          </article>
+        </div>
+      </section>
+
+      <section class="story" id="historia">
+        <div class="story-mark reveal"><span>G</span><small>feito<br />à mão</small></div>
+        <div class="story-copy reveal">
+          <span class="eyebrow">Nossa história</span>
+          <h2>Mais que café,<br />uma pausa no dia.</h2>
+          <p>Começamos com uma máquina, doze xícaras e a vontade de servir café de verdade. Hoje continuamos pequenos por escolha: conhecemos nossos produtores, torramos em lotes curtos e chamamos os clientes pelo nome.</p>
+          <a class="text-link" href="#visite">Venha conhecer <svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#arrow-right"></use></svg></a>
+        </div>
+        <blockquote class="reveal">“O café é ótimo.<br />A vontade de ficar,<br />melhor ainda.”<cite>— Marina, cliente desde 2019</cite></blockquote>
+      </section>
+
+      <section class="visit" id="visite">
+        <div class="visit-copy reveal">
+          <span class="eyebrow light">Onde estamos</span><h2>Sua mesa<br />está esperando.</h2>
+          <p>Rua das Flores, 128 · Centro<br />Maringá — PR</p>
+          <a class="button light-button" href="https://maps.google.com" target="_blank" rel="noreferrer">Abrir no mapa <svg class="ui-icon" aria-hidden="true"><use href="../icons.svg#arrow-up-right"></use></svg></a>
+        </div>
+        <div class="hours reveal">
+          <h3>Horários</h3>
+          <div><span>Segunda — Sexta</span><b>08h — 19h</b></div>
+          <div><span>Sábado</span><b>09h — 18h</b></div>
+          <div><span>Domingo</span><b>09h — 14h</b></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer"><a class="logo" href="#inicio">grão<span>.</span></a><p>© <span id="year"></span> Grão Café</p><a href="../showcase/index.html">Ver os 3 exemplos</a></footer>
+    <script src="./script.js" defer></script>
+  </body>
+</html>
